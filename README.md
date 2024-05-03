@@ -6,6 +6,8 @@ Bu repository de LLM projeleri oluşturmada kullanılan modellerden Huggin Face 
 
 Hazır mısınız? O zaman, bilgi denizinde keyifli bir yolculuğa çıkalım ve LLM projelerinin büyüleyici dünyasını keşfedin!
 
+# Fine-Tuning Nedir
+Fine-tuning, yapay zeka ve makine öğrenimi alanında kullanılan bir terimdir ve “ince ayar” anlamına gelir. Bu işlem, genel bir modeli alıp onu belirli bir görev veya veri seti için özelleştirmek anlamına gelir1. Örneğin, bir dil modelini belirli bir konu üzerine daha iyi metinler üretecek şekilde eğitmek için fine-tuning yapabilirsiniz. Bu süreç, modelin önceden eğitilmiş ağırlıklarını, yeni veri setine uyum sağlayacak şekilde güncellemeyi içerir ve böylece modelin belirli bir göreve yönelik performansını artırır.
 
 # Hunggin face üzerinden GPT-3
 
@@ -41,7 +43,21 @@ print(tokenizer.decode(outputs[0]))
 6.Fine-Tuning Yapın: Eğer modelinizi belirli bir görev için özelleştirmek istiyorsanız, fine-tuning yapabilirsiniz. Bu, modelinizi kendi veri setinizle eğiterek gerçekleştirilir.
 Bu adımlar, Hugging Face üzerinden GPT-3 modelini kullanmanıza yardımcı olacaktır. Daha fazla bilgi ve örnekler için Hugging Face’in resmi dökümantasyonuna ve model sayfasına göz atabilirsiniz.
 
-Ve bir örnek... The Author is Neri Van Otten
+# Ve bir örnek... The Author is Neri Van Otten
+
+İşte bir metin sınıflandırma görevi için GPT-3’ü nasıl fine-tune edebileceğinize dair bir örnek:
+
+1.Görevi Tanımlayın: Farklı kategorilere, örneğin politika, spor ve eğlence gibi kategorilere göre haber makalelerini sınıflandırmak istiyoruz.
+
+2.Verileri Hazırlayın: İlgili kategorilerle etiketlenmiş haber makaleleri veri setine ihtiyacımız var. Mevcut veri setlerini, örneğin Reuters Corpus’u kullanabilir veya farklı kaynaklardan haber makaleleri kazıyarak ve manuel olarak etiketleyerek kendi veri setimizi oluşturabiliriz.
+
+3.Modeli Fine-Tune Edin: Metin sınıflandırması için GPT-3’ü fine-tune etmek için Hugging Face transformers kütüphanesini kullanabiliriz. Önceden eğitilmiş GPT-3 modelini yükleyecek ve modelin üstüne bir sınıflandırma başlığı ekleyeceğiz. Modeli, geri yayılım ve gradyan iniş tekniklerini kullanarak etiketlenmiş haber makaleleri üzerinde eğiteceğiz.
+
+4.Performansı Değerlendirin: Model eğitildikten sonra, haber makalelerinin bir doğrulama seti üzerinde performansını değerlendireceğiz. Modelin performansını değerlendirmek için doğruluk, kesinlik, hatırlama ve F1 puanı metriklerini kullanabiliriz.
+
+5.Modeli Ayarlayın: Performans değerlendirmesine dayanarak, öğrenme hızı veya parti boyutu gibi modelin hiperparametrelerini ayarlayabilir ve istenen performansı elde edene kadar modeli yeniden eğitebiliriz.
+
+6.Modeli Dağıtın: Son olarak, haber makalelerini gerçek zamanlı olarak farklı kategorilere sınıflandırmak üzere üretimde modeli dağıtabiliriz.
 ```
 import torch
 from transformers import GPT2Tokenizer, GPT2ForSequenceClassification, Trainer, TrainingArguments
