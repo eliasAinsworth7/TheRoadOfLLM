@@ -1,10 +1,13 @@
 # LLM nasıl kullanılır
 
-Bilgi çağında, Uzun Kısa Hafıza (LLM) projeleri, bilgiyi derinlemesine anlamlandıran ve hızlı bir şekilde erişilebilir kılan güçlü araçlardır. Bu projeler, yapay zeka ve doğal dil işleme teknolojilerini kullanarak geniş konu yelpazelerinde veri toplar, analiz eder ve sonuçları sunar.
+Büyük Dil Modelleri (LLM), genellikle büyük miktarda metin ve veri üzerinde eğitilmiş yapay zeka modelleridir ve çeşitli doğal dil işleme (NLP) görevlerinde kullanılır. LLM’leri kullanmak için genel adımlar şunlardır:
 
-Bu repository de LLM projeleri oluşturmada kullanılan modellerden Huggin Face den GPT-3 hakkında bilgi vereceğim.
-
-Hazır mısınız? O zaman, bilgi denizinde keyifli bir yolculuğa çıkalım ve LLM projelerinin büyüleyici dünyasını keşfedin!
+1.Hedefi Belirleyin: LLM’nin hangi görevde kullanılacağını belirleyin. Bu, metin üretimi, çeviri, özetleme veya başka bir NLP görevi olabilir1.
+2.Ön Eğitim: LLM’yi eğitmek için büyük ve çeşitli bir veri kümesi gereklidir. Verilerin toplanması ve temizlenmesi, tüketim için standart hale getirilmesi gerekir1.
+3.Tokenizasyon: LLM’nin kelimeleri veya alt kelimeleri anlayabilmesi için veri kümesindeki metni daha küçük birimlere ayırın1.
+4.Altyapı Seçimi: LLM, eğitimin üstesinden gelmek için güçlü bir bilgisayar veya bulut tabanlı sunucu gibi hesaplama kaynaklarına ihtiyaç duyar1.
+5.Eğitim: Eğitim süreci için yığın boyutu veya öğrenme oranı gibi parametreleri ayarlayın1.
+6.İnce Ayar (Fine-Tuning): Eğitim yinelemeli bir süreçtir. Modele veri sunar, çıktısını değerlendirir ve ardından sonuçları iyileştirmek ve modele ince ayar yapmak için parametreleri ayarlar
 
 # Fine-Tuning Nedir
 Fine-tuning, yapay zeka ve makine öğrenimi alanında kullanılan bir terimdir ve “ince ayar” anlamına gelir. Bu işlem, genel bir modeli alıp onu belirli bir görev veya veri seti için özelleştirmek anlamına gelir1. Örneğin, bir dil modelini belirli bir konu üzerine daha iyi metinler üretecek şekilde eğitmek için fine-tuning yapabilirsiniz. Bu süreç, modelin önceden eğitilmiş ağırlıklarını, yeni veri setine uyum sağlayacak şekilde güncellemeyi içerir ve böylece modelin belirli bir göreve yönelik performansını artırır.
