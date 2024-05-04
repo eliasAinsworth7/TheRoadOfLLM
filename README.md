@@ -3,10 +3,15 @@
 Büyük Dil Modelleri (LLM), genellikle büyük miktarda metin ve veri üzerinde eğitilmiş yapay zeka modelleridir ve çeşitli doğal dil işleme (NLP) görevlerinde kullanılır. LLM’leri kullanmak için genel adımlar şunlardır:
 
 1.Hedefi Belirleyin: LLM’nin hangi görevde kullanılacağını belirleyin. Bu, metin üretimi, çeviri, özetleme veya başka bir NLP görevi olabilir1.
+
 2.Ön Eğitim: LLM’yi eğitmek için büyük ve çeşitli bir veri kümesi gereklidir. Verilerin toplanması ve temizlenmesi, tüketim için standart hale getirilmesi gerekir1.
+
 3.Tokenizasyon: LLM’nin kelimeleri veya alt kelimeleri anlayabilmesi için veri kümesindeki metni daha küçük birimlere ayırın1.
+
 4.Altyapı Seçimi: LLM, eğitimin üstesinden gelmek için güçlü bir bilgisayar veya bulut tabanlı sunucu gibi hesaplama kaynaklarına ihtiyaç duyar1.
+
 5.Eğitim: Eğitim süreci için yığın boyutu veya öğrenme oranı gibi parametreleri ayarlayın1.
+
 6.İnce Ayar (Fine-Tuning): Eğitim yinelemeli bir süreçtir. Modele veri sunar, çıktısını değerlendirir ve ardından sonuçları iyileştirmek ve modele ince ayar yapmak için parametreleri ayarlar
 
 # Fine-Tuning Nedir
@@ -17,7 +22,9 @@ Fine-tuning, yapay zeka ve makine öğrenimi alanında kullanılan bir terimdir 
 Hugging Face üzerinden GPT-3 modelini kullanmak için aşağıdaki adımları izleyebilirsiniz:
 
 1.Hugging Face Hesabı Oluşturun: Eğer henüz bir Hugging Face hesabınız yoksa, Hugging Face web sitesine giderek bir hesap oluşturun.
+
 2.API Token Alın: Hugging Face hesabınıza giriş yaptıktan sonra, API token’ınızı almak için kullanıcı profilinize gidin. Bu token, Hugging Face API’sini kullanmanızı sağlayacak.
+
 3.Gerekli Kütüphaneleri Yükleyin: Python ortamınızda transformers ve torch gibi gerekli kütüphaneleri yükleyin. Bu kütüphaneler, GPT-3 modelini kullanmanız için gereklidir.
 ```
 pip install transformers torch
